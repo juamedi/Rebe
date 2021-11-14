@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Central Intelligence Agency</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="style-common.css">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/juamedi/Rebe/main/CIA-Logo.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/juamedi/Rebe/main/CIA-Logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/juamedi/Rebe/main/CIA-Logo.png" sizes="64x64">
+  </head>
+
+  <body>
+    <div class="background-image">
+      <form class="panel" method="POST">
+        <fieldset>
+          <legend style="color: white">Central Intelligence Agency</legend>
+          <div>
+            <label style="color: white" for="login">Agent ID</label>
+            <input type="text" id="username" placeholder="Agent ID" required>
+          </div>
+          <div>
+            <label style="color: white" for="password">Password</label>
+            <input type="password" id="password" placeholder="Password" required>
+          </div>
+          <div class = "form-group">
+            <button type="button" id="login" class="boton-red">Login</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+
+  <script>
+    const login = document.getElementById("login");
+    const username = document.getElementById("username");
+    const password = document.getElementById("password");
+
+    login.addEventListener("click", function(event) {
+      if(username.value == "rebuwu" && password.value == "1711") {
+        window.location.href = "search.html";
+      }
+      else {
+        location.reload();
+      }
+    })
+  </script>
+</html>
